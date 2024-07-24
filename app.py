@@ -69,7 +69,7 @@ import requests
 @app.route('/cyber-crime-news')
 @login_required
 def cyber_crime_news():
-    api_key = "d31c9f7ea1244535a46d9503173fc144"
+    api_key = "add your api key" 
     # Enhanced search query to focus on "cyber crime"
     url = f"https://newsapi.org/v2/everything?q=cybercrime OR \"cyber crime\"&sortBy=relevance&language=en&apiKey={api_key}"
     response = requests.get(url)
